@@ -6,7 +6,11 @@ all: build
 
 rebuild: clean all
 
-test: build test_cat
+leaks: build test_cat
+	cp -f s21_cat ./test/s21_cat
+	cd test && ./test -l
+
+tests: build test_cat
 	cp -f s21_cat ./test/s21_cat
 	cd test && ./test
 

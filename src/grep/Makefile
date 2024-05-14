@@ -9,7 +9,11 @@ rebuild: clean all
 # "Build"
 build: s21_grep
 
-test: build test_grep
+leaks: build test_grep
+	cp -f s21_grep ./test/s21_grep
+	cd test && ./test -l
+
+tests: build test_grep
 	cp -f s21_grep ./test/s21_grep
 	cd test && ./test
 
