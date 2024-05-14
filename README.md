@@ -37,7 +37,6 @@ make leaks
 ```
 
 To view the valgrind report, see the file `./test/e2` file
-Tests compare the behavior of the utility with the original one using the specified flags and their combinations
 
 ## grep Usage
 
@@ -77,4 +76,5 @@ make leaks
 ```
 To view the valgrind report, see the file `./test/e2` file
 
+## Note
 Tests of both utilities compare the behavior of the utility with the original one in Linux Bash, using the specified flags and their combinations
