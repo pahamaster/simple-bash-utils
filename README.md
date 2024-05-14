@@ -36,7 +36,7 @@ Cheak memory leaks
 make leaks
 ```
 
-To view the valgrind report, see the file `./test/e2` file
+To view the valgrind report, see the file `./src/cat/test/e2`
 
 ## grep Usage
 
@@ -74,7 +74,7 @@ Cheak memory leaks
 ```
 make leaks
 ```
-To view the valgrind report, see the file `./test/e2` file
+To view the valgrind report, see the file `./src/grep/test/e2`
 
 ## Note
 Tests of both utilities compare the behavior of the utility with the original one in Linux Bash, using the specified flags and their combinations
